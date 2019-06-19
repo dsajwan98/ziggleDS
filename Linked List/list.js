@@ -91,8 +91,3 @@ function remove()
 	l.print();
 }
 
-function sort()
-{
-	stk.sort();
-	print();
-}
