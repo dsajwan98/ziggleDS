@@ -16,7 +16,7 @@ class Stack{
     }
 
     peek(){
-        return this.itemsp[this.items.length-1];
+        return this.items[this.items.length-1];
     }
 
 }
@@ -24,7 +24,7 @@ class Stack{
 var stk=new Stack();
 function print()
 {
-	document.getElementById("space").innerHTML=stk;
+	document.getElementById("space").innerHTML=JSON.stringify(stk);
 	
 }
 
@@ -43,5 +43,10 @@ function remove()
 	print();
 }
 
+function sort()
+{
+    stk.sort();
+    print();
+}
 
 
